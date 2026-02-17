@@ -1,0 +1,828 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Answerly</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo_container">
+        <h2>Answerly</h2>
+      </div>
+      <ul class="navigation">
+        <li><a>home</a></li>
+        <li><a>how it works</a></li>
+        <li><a>FAQ</a></li>
+        <li><a>pricing</a></li>
+        <li><a>about Us</a></li>
+      </ul>
+      <button class="button">Join Beta</button>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="text-content">
+            <h2>Solve Your Problems with Instant Expert Guidance!</h2>
+            <p>
+              Get instant, accurate answers from top professionals in various
+              fields, available 24/7.
+            </p>
+          </div>
+          <div class="chat">
+            <div class="suggestions">
+              <div class="suggestion-title">
+                <svg
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                >
+                  <path
+                    d="M15 16.125L14.5129 11.9846C14.363 10.7103 13.283 9.75 12 9.75H6C3.75 9.75 2.30038 7.70153 1.78648 5.6459L1.5 4.5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6 9.75V13.5C6 14.9142 6 15.6213 6.43934 16.0606C6.87868 16.5 7.5858 16.5 9 16.5C10.4142 16.5 11.1213 16.5 11.5606 16.0606C12 15.6213 12 14.9142 12 13.5V9.75"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    opacity="0.9"
+                    d="M9 7.5C10.6569 7.5 12 6.15685 12 4.5C12 2.84315 10.6569 1.5 9 1.5C7.34315 1.5 6 2.84315 6 4.5C6 6.15685 7.34315 7.5 9 7.5Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                </svg>
+                <span>choise your expert</span>
+              </div>
+              <ul class="suggestion-container">
+                <li>Lawyers</li>
+                <li>Doctors</li>
+                <li>Mechanics</li>
+                <li>Electronics Techs</li>
+              </ul>
+              <div class="menu-icon">
+                <svg
+                  width="15"
+                  viewBox="0 0 15 4"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="1.81034"
+                    cy="1.81034"
+                    r="1.81034"
+                    fill="currentColor"
+                  />
+                  <circle
+                    cx="7.4998"
+                    cy="1.81034"
+                    r="1.81034"
+                    fill="currentColor"
+                  />
+                  <circle
+                    cx="13.1893"
+                    cy="1.81034"
+                    r="1.81034"
+                    fill="currentColor"
+                  />
+                  height="4"
+                </svg>
+              </div>
+            </div>
+            <form class="form">
+              <div class="field-container">
+                <div>
+                  <textarea
+                    name="chat"
+                    id="chat"
+                    placeholder="What would you like help with today?"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <div class="submit-container">
+                  <span id="text-conter">0/1000</span>
+                  <button type="submit" class="submit">
+                    <svg
+                      width="21"
+                      height="21"
+                      viewBox="0 0 21 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.0618 10.4999H4.7404M4.58957 11.1975L3.71041 13.8237C3.22889 15.262 2.98814 15.9812 3.16092 16.424C3.31095 16.8087 3.63321 17.1002 4.03085 17.2113C4.48875 17.339 5.18035 17.0278 6.56355 16.4054L15.4311 12.415C16.7813 11.8074 17.4563 11.5037 17.6649 11.0816C17.8462 10.715 17.8462 10.2848 17.6649 9.91815C17.4563 9.49623 16.7813 9.19243 15.4311 8.58487L6.54825 4.58759C5.16922 3.96703 4.47971 3.65675 4.02227 3.78403C3.625 3.89457 3.30278 4.18538 3.15222 4.56927C2.97885 5.01131 3.21703 5.72892 3.69341 7.16415L4.59128 9.86933C4.67309 10.1158 4.71401 10.2391 4.73015 10.3651C4.74448 10.477 4.74433 10.5902 4.72972 10.7021C4.71324 10.8281 4.67202 10.9512 4.58957 11.1975Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <p class="textarea-error"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="features-section">
+        <div class="features-container">
+          <div class="text-content">
+            <h2>Simple Steps to Get Expert Answers</h2>
+            <p>
+              Follow our simple, three-step process to get accurate,
+              professional advice in minutes. Whether you have a quick question
+              or need detailed guidance.
+            </p>
+            <button class="features-button">Join Beta</button>
+          </div>
+
+          <div class="steps-wrapper">
+            <img
+              src="./assets/images/features-image.png"
+              alt="Steps Background"
+            />
+
+            <div class="steps">
+              <div class="step step-1">
+                <div class="dot"></div>
+                <span class="step-num">1</span>
+                <div class="step-text">
+                  <h3>Ask Your Question</h3>
+                  <p>
+                    Submit your question and provide a few details to help us
+                    connect you to the right expert.
+                  </p>
+                </div>
+              </div>
+
+              <div class="step step-2">
+                <div class="dot"></div>
+                <span class="step-num">2</span>
+                <div class="step-text">
+                  <h3>Get Matched</h3>
+                  <p>
+                    Within minutes, you'll be connected to an expert
+                    specializing in your query.
+                  </p>
+                </div>
+              </div>
+
+              <div class="step step-3">
+                <div class="dot"></div>
+                <span class="step-num">3</span>
+                <div class="step-text">
+                  <h3>Receive Your Answer</h3>
+                  <p>
+                    Your expert will provide a detailed answer, and you can ask
+                    follow-up questions as needed.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-section">
+        <div class="why-container">
+          <div class="why-text">
+            <h2>why Choose Our Experts?</h2>
+            <p>
+              our experts are carefully selected based on their experience,<br />
+              knowledge, and dedication to providing accurate and <br />
+              reliable answers.
+            </p>
+          </div>
+          <div class="why-cards">
+            <div class="why-card">
+              <div class="why-icon">😊</div>
+              <div class="why-text">
+                <h3>100% satisfaction guarantee</h3>
+                <p>
+                  your satisfaction is our top priority. We are committed to
+                  providing high-quality answers and expert guidance
+                </p>
+              </div>
+            </div>
+            <div class="why-card">
+              <div class="why-icon">🔑</div>
+              <div class="why-text">
+                <h3>access anywhere, anytime</h3>
+                <p>
+                  whether you are at home, at work, or on the go, our platform
+                  allows you to connect with experts whenever you need them
+                </p>
+              </div>
+            </div>
+            <div class="why-card">
+              <div class="why-icon">💬</div>
+              <div class="why-text">
+                <h3>fast and reliable responses</h3>
+                <p>
+                  get answers when you need them most. Our experts are available
+                  around the clock to provide fast and accurate responses
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="experts-section">
+        <div class="experts-container">
+          <div class="experts-header">
+            <div class="experts-text">
+              <h2>Meet Our Experts</h2>
+              <p>
+                Our experts are carefully selected based on their experience,
+                knowledge, and dedication to providing accurate and reliable
+                answers.
+              </p>
+            </div>
+            <div class="nav-buttons">
+              <div class="custom-prev">
+                <img src="./assets/icons/arrow-left.svg" alt="Previous" />
+              </div>
+              <div class="custom-next">
+                <img src="./assets/icons/arrow-right.svg" alt="Next" />
+              </div>
+            </div>
+          </div>
+          <div class="experts-slider-wrapper">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="expert-card">
+                    <img src="./assets/images/dr sarah ahmed.png" />
+                    <div class="expert-info">
+                      <h3>Dr. Sarah Ahmed1</h3>
+                      <p>
+                        Dr. Sarah Ahmed is a board-certified family physician
+                        with over 12 years of experience. She specializes in
+                        providing compassionate care and practical advice for
+                        all your health needs.
+                      </p>
+                      <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(4.9/5 from 1,200 reviews)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="expert-card">
+                    <img src="./assets/images/girl doctor.png" />
+                    <div class="expert-info">
+                      <h3>Dr. Sarah Ahmed2</h3>
+                      <p>
+                        Dr. Sarah Ahmed is a board-certified family physician
+                        with over 12 years of experience. She specializes in
+                        providing compassionate care and practical advice for
+                        all your health needs.
+                      </p>
+                      <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(4.9/5 from 1,200 reviews)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="expert-card">
+                    <img src="./assets/images/girl1 doctor.jpg" />
+                    <div class="expert-info">
+                      <h3>Dr. Sarah Ahmed3</h3>
+                      <p>
+                        Dr. Sarah Ahmed is a board-certified family physician
+                        with over 12 years of experience. She specializes in
+                        providing compassionate care and practical advice for
+                        all your health needs.
+                      </p>
+                      <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(4.9/5 from 1,200 reviews)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="expert-card">
+                    <img src="./assets/images/doctor.JPG" />
+                    <div class="expert-info">
+                      <h3>Dr. Sarah Ahmed4</h3>
+                      <p>
+                        Dr. Sarah Ahmed is a board-certified family physician
+                        with over 12 years of experience. She specializes in
+                        providing compassionate care and practical advice for
+                        all your health needs.
+                      </p>
+                      <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(4.9/5 from 1,200 reviews)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="expert-card">
+                    <img src="./assets/images/man doctor.JPG" />
+                    <div class="expert-info">
+                      <h3>Dr. Sarah Ahmed5</h3>
+                      <p>
+                        Dr. Sarah Ahmed is a board-certified family physician
+                        with over 12 years of experience. She specializes in
+                        providing compassionate care and practical advice for
+                        all your health needs.
+                      </p>
+                      <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(4.9/5 from 1,200 reviews)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials-section">
+        <div class="testimonials-container">
+          <div class="testimonials-header">
+            <h2>Testimonials</h2>
+            <p>
+              "Don't just take our word for it—hear from real users who have
+              received expert answers to their most pressing questions
+            </p>
+          </div>
+          <div class="grid" id="testimonialsGrid">
+            <img
+              src="./assets/icons/floating-icon left.png"
+              class="floating-icon left"
+            />
+            <img
+              src="./assets/icons/floating-icon right.png"
+              class="floating-icon right"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="pricing-section">
+        <div class="pricing-container">
+          <div class="pricing-header">
+            <h2>Choose Pricing Plan</h2>
+            <p>
+              Our pricing is designed to be simple and transparent. Whether you
+              need a quick answer or ongoing expert support, we offer flexible
+              options to suit your needs
+            </p>
+          </div>
+          <div class="pricing-cards">
+            <div class="card">
+              <h3>personal</h3>
+              <p>
+                perfect for those seeking quick, straightforward answers from
+                experts to get started.
+              </p>
+              <div class="price-row">
+                <div class="price">$0</div>
+                <span class="price-note">free for the first trial account</span>
+              </div>
+              <ul class="card-list">
+                <li>
+                  <svg
+                    width="19"
+                    height="19"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="9.5"
+                      cy="9.5"
+                      r="8.75"
+                      stroke="#0F67FD"
+                      stroke-width="1.5"
+                      stroke-dasharray="4 4"
+                    />
+                    <path
+                      d="M6.02344 11.3261L7.63695 12.6373C7.85089 12.8112 8.15329 12.7714 8.32264 12.5472L12.5112 7"
+                      stroke="#0F67FD"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  valid for 14 days
+                </li>
+                <li>
+                  <svg
+                    width="19"
+                    height="19"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="9.5"
+                      cy="9.5"
+                      r="8.75"
+                      stroke="#0F67FD"
+                      stroke-width="1.5"
+                      stroke-dasharray="4 4"
+                    />
+                    <path
+                      d="M6.02344 11.3261L7.63695 12.6373C7.85089 12.8112 8.15329 12.7714 8.32264 12.5472L12.5112 7"
+                      stroke="#0F67FD"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  2 expert responses included
+                </li>
+                <li>
+                  <svg
+                    width="19"
+                    height="19"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="9.5"
+                      cy="9.5"
+                      r="8.75"
+                      stroke="#0F67FD"
+                      stroke-width="1.5"
+                      stroke-dasharray="4 4"
+                    />
+                    <path
+                      d="M6.02344 11.3261L7.63695 12.6373C7.85089 12.8112 8.15329 12.7714 8.32264 12.5472L12.5112 7"
+                      stroke="#0F67FD"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  limited Integration with expert
+                </li>
+              </ul>
+              <button class="button">get started</button>
+            </div>
+
+            <div class="card popular">
+              <div class="badge">MOST POPULAR</div>
+              <h3>best Deal</h3>
+              <p>
+                ideal for users who want a balance of expert advice and deeper,
+                more frequent insights.
+              </p>
+              <div class="price-row">
+                <div class="price">$76</div>
+                <span class="price-note">trusted by over 3,000 users</span>
+              </div>
+              <ul class="card-list">
+                <li>
+                  <svg
+                    width="19"
+                    height="19"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="9.5"
+                      cy="9.5"
+                      r="8.75"
+                      stroke="#0F67FD"
+                      stroke-width="1.5"
+                      stroke-dasharray="4 4"
+                    />
+                    <path
+                      d="M6.02344 11.3261L7.63695 12.6373C7.85089 12.8112 8.15329 12.7714 8.32264 12.5472L12.5112 7"
+                      stroke="#0F67FD"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  valid for 30 Days
+                </li>
+                <li>
+                  <svg
+                    width="19"
+                    height="19"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="9.5"
+                      cy="9.5"
+                      r="8.75"
+                      stroke="#0F67FD"
+                      stroke-width="1.5"
+                      stroke-dasharray="4 4"
+                    />
+                    <path
+                      d="M6.02344 11.3261L7.63695 12.6373C7.85089 12.8112 8.15329 12.7714 8.32264 12.5472L12.5112 7"
+                      stroke="#0F67FD"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  10 expert responses included
+                </li>
+                <li>
+                  <svg
+                    width="19"
+                    height="19"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="9.5"
+                      cy="9.5"
+                      r="8.75"
+                      stroke="#0F67FD"
+                      stroke-width="1.5"
+                      stroke-dasharray="4 4"
+                    />
+                    <path
+                      d="M6.02344 11.3261L7.63695 12.6373C7.85089 12.8112 8.15329 12.7714 8.32264 12.5472L12.5112 7"
+                      stroke="#0F67FD"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  unlimited access to categories
+                </li>
+              </ul>
+              <button class="button">start free trial</button>
+            </div>
+
+            <div class="card">
+              <h3>business</h3>
+              <p>
+                tailored for larger teams and enterprises needing comprehensive,
+                on-demand answers.
+              </p>
+              <div class="price-row">
+                <div class="price">$746</div>
+                <span class="price-note">unlock unlimited access</span>
+              </div>
+              <ul class="card-list">
+                <li>
+                  <svg
+                    width="19"
+                    height="19"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="9.5"
+                      cy="9.5"
+                      r="8.75"
+                      stroke="#0F67FD"
+                      stroke-width="1.5"
+                      stroke-dasharray="4 4"
+                    />
+                    <path
+                      d="M6.02344 11.3261L7.63695 12.6373C7.85089 12.8112 8.15329 12.7714 8.32264 12.5472L12.5112 7"
+                      stroke="#0F67FD"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  valid for 1 year
+                </li>
+                <li>
+                  <svg
+                    width="19"
+                    height="19"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="9.5"
+                      cy="9.5"
+                      r="8.75"
+                      stroke="#0F67FD"
+                      stroke-width="1.5"
+                      stroke-dasharray="4 4"
+                    />
+                    <path
+                      d="M6.02344 11.3261L7.63695 12.6373C7.85089 12.8112 8.15329 12.7714 8.32264 12.5472L12.5112 7"
+                      stroke="#0F67FD"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  unlimited expert responses
+                </li>
+                <li>
+                  <svg
+                    width="19"
+                    height="19"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="9.5"
+                      cy="9.5"
+                      r="8.75"
+                      stroke="#0F67FD"
+                      stroke-width="1.5"
+                      stroke-dasharray="4 4"
+                    />
+                    <path
+                      d="M6.02344 11.3261L7.63695 12.6373C7.85089 12.8112 8.15329 12.7714 8.32264 12.5472L12.5112 7"
+                      stroke="#0F67FD"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  unlimited integration
+                </li>
+              </ul>
+              <button class="button">get started</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq-section">
+        <div class="container">
+          <div class="faq-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>
+              Got questions about how our service works? You're in the right
+              place! We've compiled answers to some of the most common inquiries
+              to help you get started.
+            </p>
+          </div>
+          <div class="faq">
+            <div class="faq-item active">
+              <button class="faq-question">
+                What Should I Do If I Need More Clarification
+                <span class="icon">x</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  What happens if I submit a question and the expert's response
+                  doesn't fully address my issue or I need additional
+                  clarification? Will I have to pay again for a follow-up, and
+                  how does the process work for continuing the conversation with
+                  the same expert?
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                Can I ask more than one question?
+                <span class="icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes! You can submit multiple questions depending on your plan
+                  or purchase.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                How much does it cost to ask a question?
+                <span class="icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Pricing varies depending on the complexity of the question and
+                  the expert category.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                Is my information kept private?
+                <span class="icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes. Your information is kept secure and confidential at all
+                  times.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                Are the experts qualified?
+                <span class="icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  All experts go through a strict vetting process to ensure
+                  high-quality guidance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <section class="cta-section">
+          <div class="cta-container">
+            <div class="cta-left">
+              <img src="./assets/images/cta-img.png" class="cta-img" />
+            </div>
+
+            <div class="cta-right">
+              <h2>Ready to Get Expert Answers?</h2>
+              <p>
+                Don't wait any longer—your solution is just a question away!
+                Whether you need quick advice or in-depth guidance, our experts
+                are here to help.
+              </p>
+
+              <div class="cta-buttons">
+                <button class="btn-secondary">Ask Your Question Now</button>
+                <button class="btn-primary">Start Your Free Trial</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <h2 class="footer-logo">Answerly</h2>
+            <p class="footer-description">
+              We connect you with verified experts in various fields to provide
+              instant, reliable answers to your most pressing questions.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Menu</h4>
+              <a href="">Home</a>
+              <a href="">How It Works</a>
+              <a href="">FAQ</a>
+              <a href="">Pricing</a>
+              <a href="">Categories</a>
+            </div>
+
+            <div class="footer-column">
+              <h4>Support</h4>
+              <a href="">FAQ's</a>
+              <a href="">Contact Us</a>
+              <a href="">Careers</a>
+            </div>
+
+            <div class="footer-column">
+              <h4>Legal</h4>
+              <a href="">Terms of Service</a>
+              <a href="">Privacy Policy</a>
+              <a href="">Cookies</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2024 Quasl. All rights reserved.</p>
+
+          <div class="footer-socials">
+            <a href="">YouTube</a>
+            <a href="">Instagram</a>
+            <a href="">Facebook</a>
+            <a href="">Twitter</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script.js" type="module"></script>
+  <script src="./menu-handler.js" type="module"></script>
+</html>
