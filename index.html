@@ -16,20 +16,40 @@
       <div class="logo_container">
         <h2>Answerly</h2>
       </div>
-      <ul class="navigation">
-        <li><a>home</a></li>
-        <li><a>how it works</a></li>
-        <li><a>FAQ</a></li>
-        <li><a>pricing</a></li>
-        <li><a>about Us</a></li>
+      <ul class="navigation" id="navMenu">
+        <li><a href="#hero">home</a></li>
+        <li><a href="#features">how it works</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#pricing">pricing</a></li>
+        <li><a href="#why">about Us</a></li>
       </ul>
-      <button class="button">Join Beta</button>
+      <button class="button desktop-btn">Join Beta</button>
+      <div class="menu-toggle" id="menuToggle">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15.0002 19.9999H31.6668M8.3335 8.33325H31.6668M21.6668 31.6666H31.6668"
+            stroke="#242E49"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
     </header>
     <main>
-      <section class="hero-section">
+      <section class="hero-section" id="hero">
         <div class="container">
           <div class="text-content">
-            <h2>Solve Your Problems with Instant Expert Guidance!</h2>
+            <h2>
+              Solve Your Problems with<br />
+              Instant Expert Guidance!
+            </h2>
             <p>
               Get instant, accurate answers from top professionals in various
               fields, available 24/7.
@@ -139,7 +159,7 @@
           </div>
         </div>
       </section>
-      <section class="features-section">
+      <section class="features-section" id="features">
         <div class="features-container">
           <div class="text-content">
             <h2>Simple Steps to Get Expert Answers</h2>
@@ -198,7 +218,7 @@
         </div>
       </section>
 
-      <section class="why-section">
+      <section class="why-section" id="why">
         <div class="why-container">
           <div class="why-text">
             <h2>why Choose Our Experts?</h2>
@@ -385,7 +405,7 @@
           </div>
         </div>
       </section>
-      <section class="pricing-section">
+      <section class="pricing-section" id="pricing">
         <div class="pricing-container">
           <div class="pricing-header">
             <h2>Choose Pricing Plan</h2>
@@ -669,7 +689,7 @@
           </div>
         </div>
       </section>
-      <section class="faq-section">
+      <section class="faq-section" id="faq">
         <div class="container">
           <div class="faq-header">
             <h2>Frequently Asked Questions</h2>
@@ -750,28 +770,26 @@
           </div>
         </div>
       </section>
-      <section>
-        <section class="cta-section">
-          <div class="cta-container">
-            <div class="cta-left">
-              <img src="./assets/images/cta-img.png" class="cta-img" />
-            </div>
+      <section class="cta-section">
+        <div class="cta-container">
+          <div class="cta-left">
+            <img src="./assets/images/cta-img.png" class="cta-img" />
+          </div>
 
-            <div class="cta-right">
-              <h2>Ready to Get Expert Answers?</h2>
-              <p>
-                Don't wait any longer—your solution is just a question away!
-                Whether you need quick advice or in-depth guidance, our experts
-                are here to help.
-              </p>
+          <div class="cta-right">
+            <h2>Ready to Get Expert Answers?</h2>
+            <p>
+              Don't wait any longer—your solution is just a question away!
+              Whether you need quick advice or in-depth guidance, our experts
+              are here to help.
+            </p>
 
-              <div class="cta-buttons">
-                <button class="btn-secondary">Ask Your Question Now</button>
-                <button class="btn-primary">Start Your Free Trial</button>
-              </div>
+            <div class="cta-buttons">
+              <button class="btn-secondary">Ask Your Question Now</button>
+              <button class="btn-primary">Start Your Free Trial</button>
             </div>
           </div>
-        </section>
+        </div>
       </section>
       <footer class="footer">
         <div class="footer-container">
