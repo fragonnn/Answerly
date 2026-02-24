@@ -53,6 +53,10 @@ const handleChat = (value) => {
   textarea.value = `I'm the best ${value} in the world ask me anything now`;
 };
 
+// textarea.addEventListener("input", () => {
+//   submitBtn.disabled = textarea.value.trim() === "";
+// });
+
 const handleElementClick = (item) => {
   handleChat(item);
   closeModal(); // close after selection

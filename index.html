@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get instant expert answers from professionals in law, medicine, tech and more. 24/7 support."
+    />
     <title>Answerly</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
 
   <body>
@@ -23,7 +28,7 @@
         <li><a href="#pricing">pricing</a></li>
         <li><a href="#why">about Us</a></li>
       </ul>
-      <button class="button desktop-btn">Join Beta</button>
+      <button class="button desktop-btn" id="joinBtn">Join Beta</button>
       <div class="menu-toggle" id="menuToggle">
         <svg
           width="40"
@@ -44,12 +49,58 @@
     </header>
     <main>
       <section class="hero-section" id="hero">
+        <div class="hero-bubbles">
+          <div class="bubble bubble-1">
+            <img src="./assets/images/1.png" alt="" />
+            <div class="bubble-text">
+              <div class="label">I'm a nutritionist</div>
+              <div class="message">How can I help you In nutrition</div>
+            </div>
+          </div>
+          <div class="bubble bubble-2">
+            <img src="./assets/images/2.png" alt="" />
+            <div class="bubble-text">
+              <div class="message">
+                I'm a travel advisor. How can I assist you with your travel.
+              </div>
+            </div>
+          </div>
+          <div class="bubble bubble-3">
+            <img src="./assets/images/3.png" alt="" />
+            <div class="bubble-text">
+              <div class="label">I'm a fitness coach</div>
+              <div class="message">
+                How can I help you reach your fitness goals?
+              </div>
+            </div>
+          </div>
+          <div class="bubble bubble-4">
+            <img src="./assets/images/4.png" alt="" />
+            <div class="bubble-text">
+              <div class="label">I'm a financial advisor.</div>
+              <div class="message">Do you need assistance with investments</div>
+            </div>
+          </div>
+          <div class="bubble bubble-5">
+            <img src="./assets/images/4.png" alt="" />
+            <div class="bubble-text">
+              <div class="label">I'm a doctor</div>
+              <div class="message">How can help you today</div>
+            </div>
+          </div>
+          <div class="bubble bubble-6">
+            <img src="./assets/images/6.png" alt="" />
+            <div class="bubble-text">
+              <div class="message">
+                I'm a tech specialist. How can I assist you with your technical
+                issues today
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="container">
           <div class="text-content">
-            <h2>
-              Solve Your Problems with<br />
-              Instant Expert Guidance!
-            </h2>
+            <h2>Solve Your Problems with Instant Expert Guidance!</h2>
             <p>
               Get instant, accurate answers from top professionals in various
               fields, available 24/7.
@@ -86,7 +137,7 @@
                     stroke-width="1.5"
                   />
                 </svg>
-                <span>choise your expert</span>
+                <span>choose your expert</span>
               </div>
               <ul class="suggestion-container">
                 <li>Lawyers</li>
@@ -119,7 +170,6 @@
                     r="1.81034"
                     fill="currentColor"
                   />
-                  height="4"
                 </svg>
               </div>
             </div>
@@ -172,14 +222,68 @@
           </div>
 
           <div class="steps-wrapper">
+            <svg
+              width="1124"
+              height="399"
+              viewBox="0 0 1124 399"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g filter="url(#filter0_d_353_762)">
+                <path
+                  d="M17.6003 232.118C88.767 284.451 251.7 384.018 334.1 363.618C437.1 338.118 438.6 220.118 587.1 208.618C735.6 197.118 759.6 246.618 867.1 208.618C974.6 170.618 950.6 0.6176 1105.6 2.6176"
+                  stroke="#0F67FD"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_d_353_762"
+                  x="9.72748e-05"
+                  y="9.72748e-05"
+                  width="1123.2"
+                  height="398.933"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dy="15" />
+                  <feGaussianBlur stdDeviation="7.8" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_353_762"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_353_762"
+                    result="shape"
+                  />
+                </filter>
+              </defs>
+            </svg>
             <img
-              src="./assets/images/features-image.png"
+              class="image-c"
+              src="./assets/images/c.png"
               alt="Steps Background"
             />
 
             <div class="steps">
+              <div class="dot dot-1"></div>
               <div class="step step-1">
-                <div class="dot"></div>
                 <span class="step-num">1</span>
                 <div class="step-text">
                   <h3>Ask Your Question</h3>
@@ -190,8 +294,8 @@
                 </div>
               </div>
 
+              <div class="dot dot-2"></div>
               <div class="step step-2">
-                <div class="dot"></div>
                 <span class="step-num">2</span>
                 <div class="step-text">
                   <h3>Get Matched</h3>
@@ -202,8 +306,8 @@
                 </div>
               </div>
 
+              <div class="dot dot-3"></div>
               <div class="step step-3">
-                <div class="dot"></div>
                 <span class="step-num">3</span>
                 <div class="step-text">
                   <h3>Receive Your Answer</h3>
@@ -217,7 +321,6 @@
           </div>
         </div>
       </section>
-
       <section class="why-section" id="why">
         <div class="why-container">
           <div class="why-text">
@@ -390,7 +493,7 @@
             <h2>Testimonials</h2>
             <p>
               "Don't just take our word for it—hear from real users who have
-              received expert answers to their most pressing questions
+              received expert answers to their most pressing questions"
             </p>
           </div>
           <div class="grid" id="testimonialsGrid">
@@ -785,8 +888,8 @@
             </p>
 
             <div class="cta-buttons">
-              <button class="btn-secondary">Ask Your Question Now</button>
-              <button class="btn-primary">Start Your Free Trial</button>
+              <a href="#hero" class="btn-secondary">Ask Your Question Now</a>
+              <a href="#pricing" class="btn-primary">Start Your Free Trial</a>
             </div>
           </div>
         </div>
@@ -839,8 +942,8 @@
         </div>
       </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./script.js" type="module"></script>
   <script src="./menu-handler.js" type="module"></script>
 </html>
