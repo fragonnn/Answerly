@@ -1389,6 +1389,36 @@ a {
   color: #ffffff;
   transform: translateY(-2px);
 }
+.footer-socials {
+  display: flex;
+}
+.footer-socials a {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #1e293b;
+  transition: all 0.3s ease;
+}
+
+.footer-socials a svg {
+  width: 18px;
+  height: 18px;
+  fill: #cbd5e1;
+  transition: fill 0.3s ease;
+}
+
+.footer-socials a:hover {
+  background: #0f67fd;
+  transform: translateY(-3px);
+}
+
+.footer-socials a:hover svg {
+  fill: #ffffff;
+}
 @media (min-width: 1025px) {
   .bubble:first-child img {
     order: 2;
@@ -1963,7 +1993,7 @@ a {
     border: 1px solid #cbd5e1;
     padding: 16px 28px;
     border-radius: 12px;
-    font-size: 13px;
+    font-size: 15px;
     cursor: pointer;
     transition: 0.3s;
     font-weight: 500;
